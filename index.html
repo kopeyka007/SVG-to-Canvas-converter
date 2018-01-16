@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="http://canvg.github.io/canvg/rgbcolor.js"></script>
+    <script type="text/javascript" src="http://canvg.github.io/canvg/StackBlur.js"></script>
+    <script type="text/javascript" src="http://canvg.github.io/canvg/canvg.js"></script>
+    <script src="js/canvg.js"></script>
+    <script src="js/rgbcolor.js"></script>
+    <script src="js/StackBlur.js"></script>
+    <script src="js/fabric.js"></script>
+
+</head>
+<body>
+        <h1>SVG to Canvas Converter</h1>
+        <div class="wrapper">
+         <div>
+                <div class="drag">
+                    <p>Drop your svg image here!</p>
+                    <input type="file" onchange="selectFiles(this.files[0])" />
+                </div>
+            <div>
+                 <form id="form">
+                    <textarea id="textarea" placeholder="Your SVG code here(<svg>...</svg>)"></textarea>
+                     <div id="message"></div>
+                    <button onclick="addSVG()" type="button">Add SVG code</button>
+                </form>
+            </div>
+        </div>
+            <div class="canvas_wrapper">
+            <h3>Canvas scene</h3>
+            <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+        <script src="js/actions.js"></script>
+</body>
+</html>

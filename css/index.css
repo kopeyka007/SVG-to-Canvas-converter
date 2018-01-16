@@ -1,0 +1,76 @@
+h1{
+    text-align:center;
+}
+.drag {
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #000;
+    overflow: hidden;
+
+}
+
+.drag input {
+    width:400px;
+    font-size: 400px;
+    opacity: 0;
+    cursor:pointer;
+    height:300px;
+}
+.drag p{
+    text-align: center;
+    font-size:30px;
+    line-height: 30px;
+}
+canvas{
+    min-width: 400px;
+    min-height:380px;
+    border: 2px solid grey;
+    margin-left:20px;
+
+
+
+
+}
+.canvas_wrapper{
+width:400px;
+    text-align: center;
+
+}
+.canvas_wrapper h3{
+line-height: 20px;
+}
+#form{
+
+}
+textarea{
+    width: 400px;
+    height:100px;
+    margin-top: 40px;
+    border:2px solid black;
+    cursor: pointer;
+
+}
+button{
+    height:40px;
+    width:150px;
+    border-radius:5px;
+    display:block;
+    margin: 20px auto;
+    border:none;
+    background-color:darkgrey ;
+    color:white;
+    cursor:pointer;
+}
+button:hover{
+    background-color:white;
+    color:darkgrey;
+    border:1px solid darkgrey;
+}
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+}
+#message{
+    text-align: center;
+    color:red;
+}
